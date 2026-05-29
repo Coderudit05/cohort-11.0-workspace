@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #parent {
+        font-size: 20px;
+      }
+
+      /* 1 em => font size of relative parent 
+        
+        if font size of parent is 20px then 1 em => 20px and 2 em => 40px 
+        */
+
+      #child {
+        height: 3em;
+        width: 3em;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <div id="child"></div>
+    </div>
+  </body>
+</html>
