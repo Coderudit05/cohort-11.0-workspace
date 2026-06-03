@@ -1,51 +1,42 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      html,
-      body {
-        height: 100%;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      span {
-        background-color: yellow;
-        border: 1px solid black;
+    html,
+    body {
+      height: 100%;
+      background-color: black;
+      padding: 1px;
+    }
 
-        height: 300px;
-        width: 300px;
+    .box{
+      height: 200px;
+      width: 200px;
+      background-color: purple;
+      margin-top: 10px;
+    }
 
-        /* display: none; */
-        visibility: hidden;
-      }
+    #box2{
+      /* display: none; */
+      visibility: hidden;
+    }
+  </style>
+</head>
 
-      i {
-        background-color: purple;
-        color: white;
-      }
+<body>
+  <div class="box"></div>
+  <div id="box2" class="box"></div>
+  <div class="box"></div>
+</body>
 
-      a {
-        text-decoration: none;
-        background-color: rgb(190, 154, 224);
-        color: white;
-      }
-    </style>
-  </head>
-  <body>
-    <span>Hello this is a inline element</span>
-    <span>Hello this is another inline element</span>
-    <span>Hello this is another inline element</span>
-    <span>Hello this is another inline element</span>
-    <span>Hello this is another inline element</span>
-    <i>Hello this is i tag</i>
-    <a href="">Hello this is anchor tag</a>
-  </body>
 </html>

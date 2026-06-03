@@ -15,32 +15,36 @@
         html,
         body {
             height: 100%;
-        }
-
-        .parent {
-            height: 100vh;
             width: 100%;
             background-color: black;
-
         }
 
         .box {
             height: 200px;
             width: 200px;
-            background-color: blueviolet;
+        }
 
-            /* position: absolute; */
-            right: 0;
-            bottom: 0;
+        #box1 {
+            background-color: purple;
+        }
+
+        #box2 {
+            background-color: orange;
+            position: absolute;
+            display: none;
+        }
+
+        #box3 {
+            background-color: yellow;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="parent">
-        <div class="box"></div>
-    </div>
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <div id="box3" class="box"></div>
 
 </body>
 
