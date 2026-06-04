@@ -16,24 +16,26 @@
         body {
             height: 100%;
             width: 100%;
-
-            background-color: black;
-            color: white;
         }
 
         body {
+            padding: 1px;
+
             display: flex;
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
 
-            /* justify-content: flex-end; */
-
-            /* justify-content: space-between; */
-            justify-content: space-evenly;
             align-items: center;
-
-            /* gap: 200px; */
-
+            justify-content: center;
 
 
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            margin-top: 10px;
 
         }
     </style>
@@ -41,9 +43,10 @@
 
 <body>
 
-    <h1>Hello how are you</h1>
-    <h1>Hello how are you</h1>
-    <h1>Hello how are you</h1>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
 
 </body>
 
