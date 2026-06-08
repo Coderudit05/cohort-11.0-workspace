@@ -1,3 +1,11 @@
 # Ignore preview folder
 16-projects-section/00-card/preview/
 16-projects-section/01-navbar-project/preview/
+
+# Hide folders 17-22
+17-display-grid/
+18-transform/
+19-pseudo-selectors/
+20-keyframes/
+21-media-queries/
+22-major-projects/
