@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background-color: black;
+        padding: 2px;
+      }
+
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 1px solid white;
+      }
+      .box:nth-child(2) {
+        /* transform: translateX(400px); */
+        /* transform: translateY(100px); */
+
+        /* transform: translate(500px , 100px);
+
+        transform: rotate(-45deg); */
+
+        transform: translate(500px, 100px) rotate(45deg) scale(0.5) skew(45deg);
+
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>

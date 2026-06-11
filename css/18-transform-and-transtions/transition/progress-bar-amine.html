@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        background-color: black;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        color: white;
+      }
+
+      .status {
+        /* background-color: purple; */
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+      }
+      .progress-card {
+        height: 50px;
+        width: 500px;
+        background-color: white;
+
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+      }
+
+      .progress-card::before {
+        content: "";
+        height: 100%;
+        width: 0%;
+        background-color: greenyellow;
+        position: absolute;
+
+        transition-property: width;
+        transition-duration: 10s;
+
+        transition-timing-function: linear;
+      }
+
+      .progress-card:hover::before{
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="status">
+      <span>0%</span>
+      <span>100%</span>
+    </div>
+    <div class="progress-card"></div>
+  </body>
+</html>
