@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    display: flex;
+    height: 64px;
+    /* background-color: peru; */
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+header #logo{
+}
+
+header img{
+    height: 150px;
+    cursor: pointer;
+
+}
+
+nav {
+    display:flex;
+
+    gap: 20px;
+
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+
+}
+
+nav a::before{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #8FC450;
+    position: absolute;
+    bottom: -4px;
+
+    transition: width 0.3s ease-in-out;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
+header button{
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: none;
+    
+    transition: all 0.3s ease-in-out;
+}
+
+header button::before{
+    content: '';
+    height: 100%;
+    width: 0%;
+    background-color: #8FC450;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    transition: width 0.3s ease-in-out;
+    
+}
+button:hover::before{
+    width: 100%;
+}
+
+button:hover{
+    color: white;
+}
+
+
+#hero{
+    background-color: peru;
+    height:calc(100vh - 64px);
+}
+
+#projects{
+    height: 100vh;
+    background-color: #0A1117;
+    color: white;
+    
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+#projects .sub-heading{
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #8FC450;
+    font: bolder;
+}
+
+#projects h2{
+    margin-top: 10px;
+    font-size: 30px;
+    font: bold;
+
+    position: relative;
+}
+
+h2::before{
+    content: '';
+    height: 3px;
+    width: 30%;
+    background-color: #8FC450;
+    position: absolute;
+
+    bottom: -6px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+
+
+.projects-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+
+    margin-top: 4%;
+}
+
+.card{
+
+    height: 400px;
+    width: 350px;
+    background-color: purple;
+
+}
+
+.card .top{
+}
