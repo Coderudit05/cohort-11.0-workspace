@@ -13,7 +13,7 @@ body {
     background-color: black;
 }
 
-header{
+header {
     display: flex;
     height: 64px;
     /* background-color: peru; */
@@ -23,29 +23,29 @@ header{
     padding: 0px 40px;
 }
 
-header #logo{
-}
+header #logo {}
 
-header img{
+header img {
     height: 150px;
     cursor: pointer;
 
 }
 
 nav {
-    display:flex;
+    display: flex;
 
     gap: 20px;
 
 }
-nav a{
+
+nav a {
     color: white;
     text-decoration: none;
     position: relative;
 
 }
 
-nav a::before{
+nav a::before {
     content: '';
     height: 3px;
     width: 0%;
@@ -56,11 +56,11 @@ nav a::before{
     transition: width 0.3s ease-in-out;
 }
 
-nav a:hover::before{
+nav a:hover::before {
     width: 100%;
 }
 
-header button{
+header button {
     padding: 10px 30px;
     cursor: pointer;
     font-size: 16px;
@@ -70,11 +70,11 @@ header button{
     z-index: 1;
     overflow: hidden;
     border: none;
-    
+
     transition: all 0.3s ease-in-out;
 }
 
-header button::before{
+header button::before {
     content: '';
     height: 100%;
     width: 0%;
@@ -84,29 +84,30 @@ header button::before{
     top: 0;
     left: 0;
     z-index: -1;
-    
+
     transition: width 0.3s ease-in-out;
-    
+
 }
-button:hover::before{
+
+button:hover::before {
     width: 100%;
 }
 
-button:hover{
+button:hover {
     color: white;
 }
 
 
-#hero{
+#hero {
     background-color: peru;
-    height:calc(100vh - 64px);
+    /* height:calc(100vh - 64px); */
 }
 
-#projects{
+#projects {
     height: 100vh;
     background-color: #0A1117;
     color: white;
-    
+
     display: flex;
 
     flex-direction: column;
@@ -114,14 +115,14 @@ button:hover{
     padding: 40px 0px;
 }
 
-#projects .sub-heading{
+#projects .sub-heading {
     margin-top: 30px;
     text-transform: uppercase;
     color: #8FC450;
     font: bolder;
 }
 
-#projects h2{
+#projects h2 {
     margin-top: 10px;
     font-size: 30px;
     font: bold;
@@ -129,7 +130,7 @@ button:hover{
     position: relative;
 }
 
-h2::before{
+h2::before {
     content: '';
     height: 3px;
     width: 30%;
@@ -144,7 +145,7 @@ h2::before{
 
 
 
-.projects-wrapper{
+.projects-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,13 +154,186 @@ h2::before{
     margin-top: 4%;
 }
 
-.card{
+.card {
 
-    height: 400px;
+    height: 360px;
     width: 350px;
-    background-color: purple;
+    /* background-color: purple; */
+    border: 2px solid #8FC450;
+
+    border-radius: 10px;
+    overflow: hidden;
 
 }
 
-.card .top{
+.card .top {
+    height: 50%;
+    /* background-color: yellowgreen; */
+}
+
+.card .top img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.card .bottom {
+    height: 50%;
+
+    padding: 20px;
+}
+
+.card .bottom h3 {
+    font-size: 30px;
+}
+
+.card .bottom p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.card .bottom #card-link {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.card .bottom #card-link i {
+    color: #8FC450;
+
+    transition: all 0.3s ease-in-out;
+}
+
+#card-link::before {
+    content: '';
+    height: 2.5px;
+    width: 0%;
+    background-color: #8FC450;
+    position: absolute;
+
+    bottom: -5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#card-link:hover::before {
+    width: 80%;
+}
+
+
+#card-link:hover i {
+    transform: rotate(-45deg);
+}
+
+
+
+/* Footer Styling */
+
+footer {
+    padding: 1px;
+    position: relative;
+}
+
+.footer-wrapper {
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 1400px;
+
+    margin: 0 auto;
+    gap: 10px;
+
+    margin-bottom: 100px;
+
+
+}
+
+#footer-logo {
+    height: 150px;
+
+}
+
+#footer-logo img {
+    height: 100%;
+    /* width: 100%; */
+}
+
+#col1{
+
+}
+
+#col1 p{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.571);
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+#col1 span{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 25px;
+}
+
+#col1 span i{
+    cursor: pointer;
+}
+
+
+.footer-wrapper .col {
+    height: 200px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px 0px;
+}
+.col h2{
+    color: #8FC450;
+}
+
+.footer-wrapper .col ul{
+    list-style: none;
+    margin-top: 10px;
+}
+
+.col ul a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.footer-underline{
+    height: 2px;
+    width: 90%;
+    background-color: #8FC450;
+    position: absolute;
+
+    top: 80%;
+    left: 50%;
+
+    transform: translate(-50%);
+}
+
+.footer-bottom{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 90%;
+    margin: 0px auto;
+}
+.footer-bottom .right{
+    display: flex;
+    gap: 20px;
 }
