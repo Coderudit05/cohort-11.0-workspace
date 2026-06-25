@@ -195,6 +195,52 @@ button:hover {
 
 
 
+/* Skills section styling */
+
+#skills{
+
+}
+
+.skills-wrapper{
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    max-width: 1400px;
+    
+    margin: 10px auto;
+    
+
+}
+
+.skills-wrapper .left{
+
+}
+
+
+
+.skills-wrapper .left .skill, .skills-wrapper .right .skill{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.left .skill img,.right .skill img{
+    height: 40px;
+
+}
+
+
+.skill-status{
+    height: 5px;
+    width: 400px;
+    background-color: #8FC450;
+}
+
 
 
 
