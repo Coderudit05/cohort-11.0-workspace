@@ -231,15 +231,31 @@ button:hover {
 
 .left .skill img,.right .skill img{
     height: 40px;
-
 }
 
 
 .skill-status{
-    height: 5px;
+    height: 10px;
+    border-radius: 20px;
     width: 400px;
-    background-color: #8FC450;
+    background-color: #0A1218;
+
+    position: relative;
+    overflow: hidden;
 }
+
+.skill-status::before{
+    content: '';
+    height: 100%;
+    width: 90%;
+    background-color: #8FC450;
+
+    position: absolute;
+    border-radius: 20px;
+}
+
+
+
 
 
 
