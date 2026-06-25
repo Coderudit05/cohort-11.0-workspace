@@ -103,6 +103,104 @@ button:hover {
     /* height:calc(100vh - 64px); */
 }
 
+
+/* about section styling*/
+
+.about-wrapper {
+    background-color: #0A1218;
+    /* background-color: yellow; */
+    padding: 40px 20px;
+
+    max-width: 1400px;
+
+    margin: 0px auto;
+
+    color: white;
+
+
+    display: flex;
+
+
+}
+
+
+.about-wrapper .right h3 {
+    font-size: 24px;
+    color: #8FC450;
+
+}
+
+#about{
+    background-color: #0A1218;
+}
+
+.about-wrapper .right h2 {
+    font-size: 34px;
+    max-width: 400px;
+    line-height: 30px;
+
+    margin-top: 16px;
+}
+
+.about-wrapper .para {
+    max-width: 500px;
+
+    margin-top: 16px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.555);
+}
+
+
+
+.about-wrapper .left {
+    height: 400px;
+    width: 50%;
+}
+
+.about-wrapper .left img {
+    height: 100%;
+    width: 600px;
+
+    border-radius: 10px;
+}
+
+
+.about-status{
+    display: flex;
+    margin-top: 20px;
+
+    gap: 20px;
+}
+
+.about-card{
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.about-card span{
+    background-color: #121D18;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+
+    color: #8FC450;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* project section styling */
+
 #projects {
     height: 100vh;
     background-color: #0A1117;
@@ -263,25 +361,23 @@ footer {
     /* width: 100%; */
 }
 
-#col1{
+#col1 {}
 
-}
-
-#col1 p{
+#col1 p {
     font-size: 18px;
     color: rgba(255, 255, 255, 0.571);
     max-width: 200px;
     margin-bottom: 20px;
 }
 
-#col1 span{
+#col1 span {
     display: flex;
     align-items: flex-start;
     gap: 10px;
     font-size: 25px;
 }
 
-#col1 span i{
+#col1 span i {
     cursor: pointer;
 }
 
@@ -296,23 +392,24 @@ footer {
 
     padding: 20px 0px;
 }
-.col h2{
+
+.col h2 {
     color: #8FC450;
 }
 
-.footer-wrapper .col ul{
+.footer-wrapper .col ul {
     list-style: none;
     margin-top: 10px;
 }
 
-.col ul a{
+.col ul a {
     color: white;
     text-decoration: none;
 
 }
 
 
-.footer-underline{
+.footer-underline {
     height: 2px;
     width: 90%;
     background-color: #8FC450;
@@ -324,7 +421,7 @@ footer {
     transform: translate(-50%);
 }
 
-.footer-bottom{
+.footer-bottom {
     color: white;
     display: flex;
     align-items: center;
@@ -333,7 +430,8 @@ footer {
     max-width: 90%;
     margin: 0px auto;
 }
-.footer-bottom .right{
+
+.footer-bottom .right {
     display: flex;
     gap: 20px;
 }
