@@ -99,9 +99,112 @@ button:hover {
 
 
 #hero {
-    background-color: peru;
-    /* height:calc(100vh - 64px); */
+    /* background-color: peru; */
+    height: calc(100vh - 64px);
+    color: white;
+
+    padding: 0px 50px;
 }
+
+#hero .left-content , #hero .right-content{
+    /* background-color: purple; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 50%;
+}
+
+#hero .left-content{
+    padding: 10px 40px;
+}
+
+#hero .intro{
+    color: #8FC450;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.left-content h2{
+    font-size: 30px;
+}
+
+
+.left-content h1{
+    font-size: 60px;
+    line-height: 1.2;
+    max-width: 600px;
+}
+
+
+.left-content span{
+    color: #8FC450;
+}
+#hero .description{
+    width: 420px;
+    /* background-color: purple; */
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+
+    color: gray;
+
+}
+
+.hero-btns{
+
+}
+
+.hero-btns button{
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.hero-btns button:nth-child(1){
+    background-color: #8FC450;
+}
+
+.hero-links{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+.hero-links p{
+    font-size: 20px;
+}
+
+.hero-links span{
+    display: flex;
+    gap: 20px;
+    font-size: 26px;
+}
+
+.hero-links a{
+    color: white;
+    background-color: #151D22;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+
+
+
+
+
 
 
 /* about section styling*/
@@ -446,7 +549,7 @@ h2::before {
 
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
 }
@@ -494,12 +597,12 @@ form{
 }
 
 .form-wrapper textarea::placeholder {
-    color:#8d98a3;
+    color: #8d98a3;
     opacity: 1;
 }
 
 
-form button{
+form button {
     background-color: #8FC450;
     color: white;
     width: fit-content;
