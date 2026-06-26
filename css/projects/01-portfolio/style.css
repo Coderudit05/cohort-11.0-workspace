@@ -130,7 +130,7 @@ button:hover {
 
 }
 
-#about{
+#about {
     background-color: #0A1218;
 }
 
@@ -165,14 +165,14 @@ button:hover {
 }
 
 
-.about-status{
+.about-status {
     display: flex;
     margin-top: 20px;
 
     gap: 20px;
 }
 
-.about-card{
+.about-card {
 
     display: flex;
     align-items: center;
@@ -180,7 +180,7 @@ button:hover {
 
 }
 
-.about-card span{
+.about-card span {
     background-color: #121D18;
     height: 70px;
     width: 70px;
@@ -197,11 +197,9 @@ button:hover {
 
 /* Skills section styling */
 
-#skills{
+#skills {}
 
-}
-
-.skills-wrapper{
+.skills-wrapper {
     color: white;
 
     display: flex;
@@ -210,31 +208,31 @@ button:hover {
     gap: 40px;
 
     max-width: 1400px;
-    
+
     margin: 10px auto;
-    
+
 
 }
 
-.skills-wrapper .left{
-
-}
+.skills-wrapper .left {}
 
 
 
-.skills-wrapper .left .skill, .skills-wrapper .right .skill{
+.skills-wrapper .left .skill,
+.skills-wrapper .right .skill {
     display: flex;
     align-items: center;
     margin-top: 20px;
     gap: 20px;
 }
 
-.left .skill img,.right .skill img{
+.left .skill img,
+.right .skill img {
     height: 40px;
 }
 
 
-.skill-status{
+.skill-status {
     height: 10px;
     border-radius: 20px;
     width: 400px;
@@ -244,7 +242,7 @@ button:hover {
     overflow: hidden;
 }
 
-.skill-status::before{
+.skill-status::before {
     content: '';
     height: 100%;
     width: 90%;
@@ -386,6 +384,135 @@ h2::before {
 #card-link:hover i {
     transform: rotate(-45deg);
 }
+
+
+/* Contact section styling */
+
+#contact {}
+
+.contact-wrapper {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: purple; */
+
+    max-width: 1400px;
+    margin: 0px auto;
+
+}
+
+
+.contact-wrapper .contact-para {
+
+    text-align: center;
+    color: #8FC450;
+    font-size: 20px;
+
+}
+
+.contact-wrapper h2 {
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.form-wrapper .info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-wrapper .info-card p {
+    color: rgba(255, 255, 255, 0.521);
+}
+
+.form-wrapper .info-card i {
+    color: #8FC450;
+    font-size: 25px;
+}
+
+.contact-wrapper .form-wrapper {
+
+    /* background-color: peru; */
+
+    padding: 20px 0px;
+
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper .left-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+
+.form-wrapper .right-info {}
+
+.form-wrapper .right-info form {}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-wrapper .right-info form input {
+    background-color: #151D22;
+    padding: 10px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.607);
+    border-radius: 4px;
+    outline: none;
+    color: white;
+}
+
+.form-wrapper .right-info form input.subject-input {
+    width: 100%;
+
+}
+
+.form-wrapper textarea {
+    background-color: #151D22;
+    padding: 10px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.607);
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    resize: none;
+}
+
+.form-wrapper textarea::placeholder {
+    color:#8d98a3;
+    opacity: 1;
+}
+
+
+form button{
+    background-color: #8FC450;
+    color: white;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
 
 
 
