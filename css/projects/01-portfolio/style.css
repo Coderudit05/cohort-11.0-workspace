@@ -104,6 +104,8 @@ button:hover {
     color: white;
 
     padding: 0px 50px;
+
+    display: flex;
 }
 
 #hero .left-content , #hero .right-content{
@@ -114,6 +116,11 @@ button:hover {
     justify-content: center;
     
     width: 50%;
+    
+}
+
+#hero .right-content{
+    /* background-color: paleturquoise; */
 }
 
 #hero .left-content{
@@ -155,6 +162,40 @@ button:hover {
 
 .hero-btns{
 
+}
+
+.hero-btns button:nth-child(1){
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#hero-hire:hover{
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#hero-work-btn{
+    transition: all 0.3s ease-in-out;
+}
+#hero-work-btn:hover{
+    color: #8FC450;
+}
+
+.hero-btns button:nth-child(1)::before{
+
+    content: '';
+    height: 100%;
+    width: 0%;
+    background-color: peru;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+}
+.hero-btns button:nth-child(1):hover::before{
+    width: 100%;
 }
 
 .hero-btns button{
