@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/f12c1313f0.js"
       crossorigin="anonymous"
@@ -23,32 +24,58 @@
         <form action="" class="">
           <div class="flex flex-col mb-8">
             <label for="email" class="text-lg">Email Address</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="Enter Your Email"
-              class="border-2 border-gray-400/50 px-4 py-2 rounded-lg"
-            />
+            <div class="border-2 border-gray-400/50 px-4 py-2 rounded-lg">
+              <i class="fa-solid fa-unlock-keyhole text-gray-400 text-lg"></i>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter Your Email"
+                class="outline-none"
+              />
+            </div>
           </div>
 
           <div class="flex flex-col mb-2">
             <label for="password" class="text-lg">Enter Your Password</label>
-            <input
-              id="password"
-              type="password"
-              placeholder="Enter Your Password"
-              class="border-2 border-gray-400/50 px-4 py-2 rounded-lg"
-            />
+            <div class="border-2 border-gray-400/50 px-4 py-2 rounded-lg">
+              <i class="fa-regular fa-envelope text-gray-400 text-lg"></i>
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter Your Password"
+                class="outline-none"
+              />
+            </div>
           </div>
-          <a href="#" class="text-[#A38AF1] hover:text-[#4F46E4] duration-300"
-            >forgot password <i class="fa-solid fa-arrow-right"></i
-          ></a>
+          <div class="flex justify-end">
+            <a
+              href="#"
+              class="text-[#A38AF1] hover:text-[#4F46E4] duration-300 inline-block"
+              >forgot password
+              <i class="fa-solid fa-arrow-right inline-block"></i
+            ></a>
+          </div>
 
           <div class="flex items-center justify-around mt-8">
-            <button class="bg-[#A38AF1] px-10 py-2 rounded-lg cursor-pointer text-white">Sign In</button>
-            <button class="border-2 border-[#A38AF1] px-10 py-2 rounded-lg cursor-pointer text-[#A38AF1]">Create Account</button>
+            <button
+              id="btn1"
+              class="bg-[#A38AF1] px-10 py-2 rounded-lg cursor-pointer text-white btn"
+            >
+              Sign In
+            </button>
+            <button
+              class="border-2 border-[#A38AF1] px-10 py-2 rounded-lg cursor-pointer text-[#A38AF1]"
+            >
+              Create Account
+            </button>
           </div>
         </form>
+
+        <div class="flex items-center justify-between px-4 mt-10">
+          <span class="h-0.5 w-sm bg-blue-500"></span>
+          <p class="px-6">OR</p>
+          <span class="h-0.5 w-sm bg-blue-500"></span>
+        </div>
       </div>
     </div>
   </body>
