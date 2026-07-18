@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/f12c1313f0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="min-h-screen bg-gray-200">
+
+
+    <header class="shadow-lg">
+        <nav class="flex h-16 items-center justify-between max-w-7xl mx-auto px-6 ">
+            <div id="logo" class="text-3xl cursor-pointer">MyDev<span>.</span></div>
+
+            <ul class="hidden md:flex gap-10">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+
+            <button
+                class="hidden md:flex bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 font-semibold px-6 py-2 rounded-lg cursor-pointer">Let's
+                Connect</button>
+
+            <div id="menu-icon" class="flex md:hidden">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="flex flex-col items-center justify-center min-h-[calc(100vh-64px)] bg-pink-500 ">
+        <h1 class="text-3xl sm:text-5xl md:text-7xl max-w-3xl text-center font-bold px-2 md:px-0 mb-4 sm:mb-10">AI-Powered
+            Customer Service Chatbot</h1>
+        <p class="max-w-xl md:max-w-2xl text-center md:text-lg leading-tight text-black/70 px-2 md:px-0 mb-10">Our AI-powered customer
+            service
+            chatbot is an innovative tool that can assist customers 24/7 with
+            their inquiries, providing fast and accurate responses.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-10">
+            <button class="px-8 py-2 rounded-xl cursor-pointer text-lg bg-[#111827] text-white">Create a
+                Chatbot</button>
+            <button class="px-8 py-2 rounded-xl cursor-pointer text-lg border border-[#111827]">Book a Demo</button>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
